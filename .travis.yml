@@ -27,7 +27,9 @@ script:
   - go vet ./...
   - go test -gcflags=-l -covermode=count -coverprofile=profile.cov ./...
   - goveralls -coverprofile=profile.cov -service=travis-ci
-  - GOARCH=""; GOOS=""; go build -a -ldflags "-s -X main.version=$(git describe --tags --always)" -o ./mydemoskill ./cmd/mydemoskill
+  - pwd
+  - ls -la .
+  - go build -a -ldflags "-s -X main.version=$(git describe --tags --always)" -o ./mydemoskill ./cmd/mydemoskill
   - ./mydemoskill make --skill --models
 
 notifications:
