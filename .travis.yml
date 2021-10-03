@@ -1,0 +1,33 @@
+dist: focal
+sudo: true
+
+language: go
+go:
+  - "1.16.x"
+  - "1.x"
+env:
+  global:
+    - GO111MODULE=on
+    - GOARCH=amd64
+    - GOOS=linux
+    - GOLANGCI_LINTER_VERSION=v1.42.0
+services:
+  - docker
+
+before_install:
+  - go mod download
+  - go get golang.org/x/lint/golint
+  - go get github.com/mattn/goveralls
+  - docker pull lambci/lambda:go1.x
+  - curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | bash -s -- -b $GOPATH/bin $GOLANGCI_LINTER_VERSION
+
+script:
+  - golangci-lint run
+  - go vet ./...
+  - go test -gcflags=-l -covermode=count -coverprofile=profile.cov ./...
+  - goveralls -coverprofile=profile.cov -service=travis-ci
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
