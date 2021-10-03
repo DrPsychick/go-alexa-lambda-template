@@ -36,21 +36,25 @@ ls -la ./alexa/skill.json ./alexa/*/*/en-US.json
 ### Push it to your own git
 ```shell
 # create your own git repo and push it
-git remote add origin https://github.com/.../....git
+GITREPO=github.com/yourname/yourproject
+git remote add origin https://$GITREPO.git
+# replace module paths of the template with your own
+find . -name \*.go -exec sed -i "" -e "s#github.com/drpsychick/go-alexa-lambda-template#$GITREPO#" {} ';'
 git add .
 git commit -m "initial commit"
 git push
 ```
 
-### Replace existing Intent with your own
+# Build your own skill
+## Replace existing Intent with your own
 This templates is ready to use with an existing demo intent. Here are some example phrases:
 * Alexa open my demo skill and make coffee.
 * Alexa prepare lunch with my demo skill.
 * Alexa start my demo skill. Yes? Sudo make me a sandwich.
 
 To replace it with your own first intent, do the following:
-#### Replace sample constants and translations
-* Replace Intent and Slot name in `loca/loca.go`
+## Replace sample constants and translations
+* Replace **Intent** and **Slot** name in `loca/loca.go`
   * Replace `DoSomething` with your intent name
   * Replace `Task` with your slot type
 * Update your english locale accordingly `loca/en-US.go`
@@ -58,19 +62,20 @@ To replace it with your own first intent, do the following:
   * Change texts and phrases to match your intent.
 * Make sure all references to the changed `loca.` constants are updated in all files.
 
-#### Replace demo with your own logic
+## Replace demo with your own logic
 * Adjust `skill.go` to define your skill manifest and interaction model.
-* Adjust `app.go` and add the behavioural or business logic for your intent.
+* Adjust `app.go` and add the behavioural or business logic for your intents.
 * Adjust `lambda/lambda.go` to add more intents or change how to process Alexa requests.
 * Of course, adjust `loca` files to your needs, adding keys and changing texts.
 
-#### Verify skill manifest and interaction model
-* run `make build; ./mydemoskill make`
-* check `alexa/skill.json` and `alexa/interactionModel/custom/en-US.json `
+## Verify skill manifest and interaction model
+* run `make build; ./mydemoskill make --skill --models`
+* check `alexa/skill.json` and `alexa/interactionModel/custom/en-US.json`
 
 
-## Before you code
-Make a concept for your skill, e.g. use a mind map
+# Before you code
+## Interaction concept
+Make a concept for your skill on how people will interact with it, e.g. use a mind map.
 * How will users launch it?
 * How will users interact with your skill?
 * Write down example phrases and dialogs with your skill.
