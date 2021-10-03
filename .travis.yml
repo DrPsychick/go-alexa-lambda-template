@@ -1,0 +1,37 @@
+dist: focal
+sudo: true
+
+language: go
+go:
+  - "1.16.x"
+  - "1.x"
+env:
+  global:
+    - GO111MODULE=on
+    - GOARCH=amd64
+    - GOOS=linux
+#    - CGO_ENABLED=0
+    - GOLANGCI_LINTER_VERSION=v1.42.0
+    - COVERALLS_TOKEN=""
+services:
+  - docker
+
+before_install:
+  - go mod download
+  - go install github.com/mattn/goveralls@v0.0.11
+  - docker pull lambci/lambda:go1.x
+  - curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | bash -s -- -b $GOPATH/bin $GOLANGCI_LINTER_VERSION
+
+script:
+  - golangci-lint run
+  - go vet ./...
+  - go test -gcflags=-l -covermode=count -coverprofile=profile.cov ./...
+  - goveralls -coverprofile=profile.cov -service=travis-ci
+  - go build -a -ldflags "-s -X main.version=$(git describe --tags --always)" -o ./mydemoskill ./cmd/mydemoskill
+  - ./mydemoskill make --skill --models
+  - ./test/test-lambda.sh
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
