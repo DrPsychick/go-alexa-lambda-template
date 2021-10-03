@@ -11,6 +11,7 @@ Template project using [go-alexa-lambda](https://github.com/DrPsychick/go-alexa-
 ## How to use it
 ### Checkout the template
 ```shell
+# this must be in your GOPATH, e.g. in the path to your git repo (see below)
 git clone https://github.com/DrPsychick/go-alexa-lambda-template.git
 mv go-alexa-lambda-template my-skill-name
 cd my-skill-name
@@ -26,7 +27,7 @@ make test
 make build
 
 # generate skill and interactionModel(s)
-./myskilldemo make --skill --models
+./mydemoskill make --skill --models
 ls -la ./alexa/skill.json ./alexa/*/*/en-US.json
 
 # test how lambda responds to a launch request
@@ -37,6 +38,7 @@ ls -la ./alexa/skill.json ./alexa/*/*/en-US.json
 ```shell
 # create your own git repo and push it
 GITREPO=github.com/yourname/yourproject
+git init .
 git remote add origin https://$GITREPO.git
 # replace module paths of the template with your own
 find . -name \*.go -exec sed -i "" -e "s#github.com/drpsychick/go-alexa-lambda-template#$GITREPO#" {} ';'
