@@ -50,20 +50,19 @@ var enUS = &l10n.Locale{
 		// Intent "AMAZON.HelpIntent"
 		l10n.KeyHelpTitle: {"Help"},
 		l10n.KeyHelpText: {
-			"You can do something by saying: process XXX or do something with XXX",
-			"Try saying: 'start chores' or 'process homework'",
+			"You can do something by saying: make XXX or prepare XXX",
+			"Try saying: 'make coffee' or 'sudo make me a sandwich'",
 		},
 		l10n.KeyHelpSSML: {
-			ssml.Speak("You can do something by saying: 'do something with chores' or 'process homework'."),
-			ssml.Speak("Try saying: 'process ...' and then add your Task name."),
+			ssml.Speak("You can do something by saying: 'make coffee' or 'prepare lunch'."),
+			ssml.Speak("Try saying: 'make ...' and then add your task name."),
 			ssml.Speak("Try saying " +
-				ssml.UseVoice("Justin", "start server") +
-				" and then append your server name",
+				ssml.UseVoice("Justin", "sudo make me a sandwich"),
 			),
 		},
-		l10n.KeyCancelTitle: {},
-		l10n.KeyCancelText:  {},
-		l10n.KeyCancelSSML:  {},
+		l10n.KeyCancelTitle: {"Abort"},
+		l10n.KeyCancelText:  {"Ok, aborting now.", "Alright, rolling back."},
+		l10n.KeyCancelSSML:  {ssml.Speak("Ok I'm rolling back now.")},
 
 		// launch request
 		l10n.KeyLaunchTitle: {
