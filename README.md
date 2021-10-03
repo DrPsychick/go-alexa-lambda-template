@@ -15,8 +15,28 @@ git clone https://github.com/DrPsychick/go-alexa-lambda-template.git
 mv go-alexa-lambda-template my-skill-name
 cd my-skill-name
 rm -rf .git
+```
+
+### Test, build and run it
+```shell
+# Makefile requires mmake
+go install github.com/tj/mmake/cmd/mmake@v1.4.0
+alias make='mmake'
+make test
+make build
+
+# generate skill and interactionModel(s)
+./myskilldemo make --skill --models
+ls -la ./alexa/skill.json ./alexa/*/*/en-US.json
+
+# test how lambda responds to a launch request
+./test/test-lambda.sh launch
+```
+
+### Push it to your own git
+```shell
 # create your own git repo and push it
-git add remote ...
+git remote add origin https://github.com/.../....git
 git add .
 git commit -m "initial commit"
 git push

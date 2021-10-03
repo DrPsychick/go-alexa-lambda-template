@@ -1,4 +1,4 @@
-// Package alexacontrol is the core app functionality.
+// Package mydemoskill is the core app functionality.
 package mydemoskill
 
 import (
