@@ -15,10 +15,10 @@ func TestWithRequestStats(t *testing.T) {
 	r.On("Counter", "request.start", int64(1), tags)
 	r.On("Timing", "request.time", tags)
 	r.On("Counter", "request.complete", int64(1), tags)
-
+	stats := statter.New(r, time.Second)
 	m := middleware.WithRequestStats(alexa.HandlerFunc(
 		func(b *alexa.ResponseBuilder, r *alexa.RequestEnvelope) {}),
-		statter.New(r, time.Millisecond),
+		stats,
 	)
 
 	bdr := &alexa.ResponseBuilder{}
@@ -39,7 +39,7 @@ func TestWithRequestStats(t *testing.T) {
 	}
 
 	m.Serve(bdr, req)
-	time.Sleep(5 * time.Millisecond)
+	stats.Close()
 	r.AssertExpectations(t)
 }
 
@@ -49,9 +49,10 @@ func TestWithRequestStats_NonIntentRequests(t *testing.T) {
 	r.On("Counter", "request.start", int64(1), tags)
 	r.On("Timing", "request.time", tags)
 	r.On("Counter", "request.complete", int64(1), tags)
+	stats := statter.New(r, time.Second)
 	m := middleware.WithRequestStats(alexa.HandlerFunc(
 		func(b *alexa.ResponseBuilder, r *alexa.RequestEnvelope) {}),
-		statter.New(r, time.Millisecond),
+		stats,
 	)
 
 	bdr := &alexa.ResponseBuilder{}
@@ -63,7 +64,7 @@ func TestWithRequestStats_NonIntentRequests(t *testing.T) {
 	}
 
 	m.Serve(bdr, req)
-	time.Sleep(5 * time.Millisecond)
+	stats.Close()
 	r.AssertExpectations(t)
 }
 
