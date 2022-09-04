@@ -10,7 +10,7 @@ require (
 	github.com/hamba/timex v1.1.0
 	github.com/joho/godotenv v1.4.0
 	github.com/stretchr/testify v1.8.0
-	github.com/urfave/cli/v2 v2.11.0
+	github.com/urfave/cli/v2 v2.14.0
 )
 
 require (
