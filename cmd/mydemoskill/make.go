@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"io/ioutil"
 	"os"
 
 	"github.com/urfave/cli/v2"
@@ -36,7 +35,7 @@ func runMake(c *cli.Context) error {
 			return err
 		}
 		res, _ := json.MarshalIndent(s, "", "  ")
-		if err := ioutil.WriteFile("./alexa/skill.json", res, 0o644); err != nil {
+		if err := os.WriteFile("./alexa/skill.json", res, 0o644); err != nil {
 			return err
 		}
 	}
@@ -50,7 +49,7 @@ func runMake(c *cli.Context) error {
 			filename := "./alexa/interactionModels/custom/" + l + ".json"
 
 			res, _ := json.MarshalIndent(m, "", "  ")
-			if err := ioutil.WriteFile(filename, res, 0o644); err != nil {
+			if err := os.WriteFile(filename, res, 0o644); err != nil {
 				app.Logger().Error(err.Error())
 				return err
 			}
