@@ -2,5 +2,18 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base"
+  ],
+  "enabledManagers": ["regex", "gomod"],
+  "regexManagers": [
+    {
+      "fileMatch": [
+        "^.travis.yml$"
+      ],
+      "matchStrings": [
+        "\\s- .*VERSION=(?<currentValue>.*?) # (?<datasource>.*?):(?<depName>.*?)\\n",
+        "\\s- go install .*@(?<currentValue>.*?) # (?<datasource>.*?):(?<depName>.*?)\\n"
+      ],
+      "versioningTemplate": "semver"
+    }
   ]
 }
