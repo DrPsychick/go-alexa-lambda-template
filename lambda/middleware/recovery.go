@@ -3,6 +3,7 @@ package middleware
 
 import (
 	"fmt"
+	"net/http"
 
 	"github.com/drpsychick/go-alexa-lambda"
 	"github.com/hamba/logger/v2"
@@ -31,4 +32,14 @@ func (m Recovery) Serve(b *alexa.ResponseBuilder, r *alexa.RequestEnvelope) {
 	}()
 
 	m.handler.Serve(b, r)
+}
+
+func (m Recovery) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	defer func() {
+		if v := recover(); v != nil {
+			m.l.Error(fmt.Sprintf("%+v", v))
+		}
+	}()
+
+	m.handler.ServeHTTP(w, r)
 }
