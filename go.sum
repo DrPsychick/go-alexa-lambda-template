@@ -50,6 +50,8 @@ github.com/alecthomas/units v0.0.0-20190924025748-f65c72e2690d/go.mod h1:rBZYJk5
 github.com/antihax/optional v1.0.0/go.mod h1:uupD/76wgC+ih3iEmQUL+0Ugr19nfwCT1kdvxnR2qWY=
 github.com/aws/aws-lambda-go v1.26.0 h1:6ujqBpYF7tdZcBvPIccs98SpeGfrt/UOVEiexfNIdHA=
 github.com/aws/aws-lambda-go v1.26.0/go.mod h1:jJmlefzPfGnckuHdXX7/80O3BvUUi12XOkbv4w9SGLU=
+github.com/aws/aws-lambda-go v1.34.1 h1:M3a/uFYBjii+tDcOJ0wL/WyFi2550FHoECdPf27zvOs=
+github.com/aws/aws-lambda-go v1.34.1/go.mod h1:jwFe2KmMsHmffA1X2R09hH6lFzJQxzI8qK17ewzbQMM=
 github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973/go.mod h1:Dwedo/Wpr24TaqPxmxbtue+5NUziq4I4S80YR8gNf3Q=
 github.com/beorn7/perks v1.0.0/go.mod h1:KWe93zE9D1o94FZ5RNwFwVgaQK1VOXiVxmqh+CedLV8=
 github.com/beorn7/perks v1.0.1 h1:VlbKKnNfV8bJzeqoa4cOKqO6bYr3WgKZxO8Z16+hsOM=
@@ -79,6 +81,8 @@ github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/drpsychick/go-alexa-lambda v0.1.0 h1:utvZ6SzUhn3Q1k8xC0HokSNRN6KTE5Zrj86Gy2lOKVI=
 github.com/drpsychick/go-alexa-lambda v0.1.0/go.mod h1:Armqn/I3nxf8GtUlqwotxX9qs9WveFXuX3BaL+vGfy4=
+github.com/drpsychick/go-alexa-lambda v0.1.2 h1:Nqg1g5tElbqE8TIRZKNKaNu0kT4SrCmkz3XXQ/xPgqc=
+github.com/drpsychick/go-alexa-lambda v0.1.2/go.mod h1:nEKORSjEIvpsXUdAmOL6hGQGR9+sq1VL1OiEg69at0o=
 github.com/eapache/go-resiliency v1.1.0/go.mod h1:kFI+JgMyC7bLPUVY133qvEBtVayf5mFgVsvEsIPBvNs=
 github.com/eapache/go-resiliency v1.2.0/go.mod h1:kFI+JgMyC7bLPUVY133qvEBtVayf5mFgVsvEsIPBvNs=
 github.com/eapache/go-xerial-snappy v0.0.0-20180814174437-776d5712da21/go.mod h1:+020luEh2TKB4/GOp8oxxtq0Daoen/Cii55CzbTV6DU=
@@ -191,6 +195,8 @@ github.com/hamba/statter/v2 v2.1.0 h1:5E7ddRoGAHKFoKk1nbLvVEkoRaCHVoyEeeH9VGCJzc
 github.com/hamba/statter/v2 v2.1.0/go.mod h1:7vJdomdhMybryIMQgofFJySR1o2fHSitDusAZ/DDIhs=
 github.com/hamba/statter/v2 v2.3.0 h1:1QrkjJvXvTmBqUoLmM31l7slo0n6DQV5SF3H6YV3Njg=
 github.com/hamba/statter/v2 v2.3.0/go.mod h1:1RYEW6BOKviiMxyRH35W24Jf/k5U/UAQX3Xxe2yRrOI=
+github.com/hamba/statter/v2 v2.3.1 h1:CLn64OjpwAQm3hcUidywQD2fuT/1Ey796ptjbCuZ4k4=
+github.com/hamba/statter/v2 v2.3.1/go.mod h1:l0hZwI8OGs781fPqLDIu/2tmyRRezpDY71P4qin+WcY=
 github.com/hamba/timex v1.0.1 h1:Qefttpp1WRjv2irFi1uMvfM+CmivG/7YSkMlG/WKHWQ=
 github.com/hamba/timex v1.0.1/go.mod h1:lUd4hx+gOnT4D9WP7mzJyVaG/B25a+TaPq4nr2AiVf4=
 github.com/hashicorp/go-uuid v1.0.2/go.mod h1:6SBZvOh/SIDV7/2o3Jml5SYk/TvGqwFJ/bN7x4byOro=
