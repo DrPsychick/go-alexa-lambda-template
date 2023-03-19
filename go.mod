@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/drpsychick/go-alexa-lambda v0.1.2
-	github.com/hamba/cmd/v2 v2.6.0
+	github.com/hamba/cmd/v2 v2.7.1
 	github.com/hamba/logger/v2 v2.4.0
 	github.com/hamba/statter/v2 v2.3.2
 	github.com/hamba/timex v1.1.0
