@@ -1,5 +1,5 @@
-[![Build Status](https://app.travis-ci.com/DrPsychick/go-alexa-lambda-template.svg?branch=master)](https://app.travis-ci.com/DrPsychick/go-alexa-lambda-template)
-[![Coverage Status](https://coveralls.io/repos/github/DrPsychick/go-alexa-lambda-template/badge.svg?branch=master)](https://coveralls.io/github/DrPsychick/go-alexa-lambda-template?branch=master)
+[![Workflow Status](https://img.shields.io/github/actions/workflow/status/drpsychick/go-alexa-lambda-template/ci.yaml)](https://github.com/DrPsychick/go-alexa-lambda-template/actions)
+[![Coverage Status](https://coveralls.io/repos/github/DrPsychick/go-alexa-lambda-template/badge.svg?branch=main)](https://coveralls.io/github/DrPsychick/go-alexa-lambda-template?branch=main)
 [![Contributors](https://img.shields.io/github/contributors/drpsychick/go-alexa-lambda-template.svg)](https://github.com/drpsychick/go-alexa-lambda-template/graphs/contributors)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/drpsychick/go-alexa-lambda-template.svg)](https://github.com/drpsychick/go-alexa-lambda-template/pulls)
 [![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/drpsychick/go-alexa-lambda-template.svg)](https://github.com/drpsychick/go-alexa-lambda-template/pulls?q=is%3Apr+is%3Aclosed)

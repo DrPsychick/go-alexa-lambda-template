@@ -17,18 +17,18 @@ var enUS = &l10n.Locale{
 			"skill", "template",
 		},
 		l10n.KeySkillSmallIconURI: {
-			"https://raw.githubusercontent.com/DrPsychick/alexa-go-cloudformation-demo/master/alexa/assets/images/de-DE_small.png", //nolint:lll
+			"https://raw.githubusercontent.com/DrPsychick/alexa-go-cloudformation-demo/main/alexa/assets/images/de-DE_small.png", //nolint:lll
 		},
 		l10n.KeySkillLargeIconURI: {
-			"https://raw.githubusercontent.com/DrPsychick/alexa-go-cloudformation-demo/master/alexa/assets/images/de-DE_large.png", //nolint:lll
+			"https://raw.githubusercontent.com/DrPsychick/alexa-go-cloudformation-demo/main/alexa/assets/images/de-DE_large.png", //nolint:lll
 		},
 		l10n.KeySkillPrivacyPolicyURL: {
-			"https://raw.githubusercontent.com/DrPsychick/alexa-go-cloudformation-demo/master/LICENSE",
+			"https://raw.githubusercontent.com/DrPsychick/alexa-go-cloudformation-demo/main/LICENSE",
 		},
 		// Error: privacyAndCompliance.locales.en-US
 		// - object instance has properties which are not allowed by the schema: ["termsOfUse"]
 		// l10n.KeySkillTermsOfUse: []string{
-		//	"https://raw.githubusercontent.com/DrPsychick/alexa-go-cloudformation-demo/master/LICENSE",
+		//	"https://raw.githubusercontent.com/DrPsychick/alexa-go-cloudformation-demo/main/LICENSE",
 		// },
 		l10n.KeySkillTestingInstructions: {
 			"Instructions on how to verify that the skill works.",
