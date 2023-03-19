@@ -42,7 +42,7 @@ jobs:
         uses: shogo82148/actions-goveralls@v1
         with:
           path-to-profile: profile.cov
-      - name:
+      - name: Build and test
         run: |
           go build -a -ldflags "-s -X main.version=$(git describe --tags --always)" -o ./mydemoskill ./cmd/mydemoskill
           ./mydemoskill make --skill --models
