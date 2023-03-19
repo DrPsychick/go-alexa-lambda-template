@@ -3,7 +3,7 @@ module github.com/drpsychick/go-alexa-lambda-template
 go 1.19
 
 require (
-	github.com/drpsychick/go-alexa-lambda v0.1.2
+	github.com/drpsychick/go-alexa-lambda v0.2.1
 	github.com/hamba/cmd/v2 v2.7.1
 	github.com/hamba/logger/v2 v2.4.0
 	github.com/hamba/statter/v2 v2.3.2
@@ -15,7 +15,7 @@ require (
 
 require (
 	github.com/VictoriaMetrics/metrics v1.23.1 // indirect
-	github.com/aws/aws-lambda-go v1.34.1 // indirect
+	github.com/aws/aws-lambda-go v1.38.0 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cactus/go-statsd-client/v5 v5.0.0 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
