@@ -50,6 +50,8 @@ github.com/aws/aws-lambda-go v1.34.1 h1:M3a/uFYBjii+tDcOJ0wL/WyFi2550FHoECdPf27z
 github.com/aws/aws-lambda-go v1.34.1/go.mod h1:jwFe2KmMsHmffA1X2R09hH6lFzJQxzI8qK17ewzbQMM=
 github.com/aws/aws-lambda-go v1.38.0 h1:4CUdxGzvuQp0o8Zh7KtupB9XvCiiY8yKqJtzco+gsDw=
 github.com/aws/aws-lambda-go v1.38.0/go.mod h1:jwFe2KmMsHmffA1X2R09hH6lFzJQxzI8qK17ewzbQMM=
+github.com/aws/aws-lambda-go v1.39.1 h1:UcuX9O3JqhQyP/rxPJEpTUUSehzqkNpwKKRFa9N+ozk=
+github.com/aws/aws-lambda-go v1.39.1/go.mod h1:jwFe2KmMsHmffA1X2R09hH6lFzJQxzI8qK17ewzbQMM=
 github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973/go.mod h1:Dwedo/Wpr24TaqPxmxbtue+5NUziq4I4S80YR8gNf3Q=
 github.com/beorn7/perks v1.0.0/go.mod h1:KWe93zE9D1o94FZ5RNwFwVgaQK1VOXiVxmqh+CedLV8=
 github.com/beorn7/perks v1.0.1 h1:VlbKKnNfV8bJzeqoa4cOKqO6bYr3WgKZxO8Z16+hsOM=
@@ -80,6 +82,8 @@ github.com/drpsychick/go-alexa-lambda v0.1.2 h1:Nqg1g5tElbqE8TIRZKNKaNu0kT4SrCmk
 github.com/drpsychick/go-alexa-lambda v0.1.2/go.mod h1:nEKORSjEIvpsXUdAmOL6hGQGR9+sq1VL1OiEg69at0o=
 github.com/drpsychick/go-alexa-lambda v0.2.1 h1:ZQkZOXuP+HMTaQIvcXI4nYy2f6LkVavCLGt54W9lk94=
 github.com/drpsychick/go-alexa-lambda v0.2.1/go.mod h1:18hSQioEi5byl0IfQD4Cgg6BS3wOuy+8c7oIdCfrt0c=
+github.com/drpsychick/go-alexa-lambda v0.2.2 h1:AZuktdT8lux/oAO2NWJsQV8jQ17u+ROSWQ3agae+neQ=
+github.com/drpsychick/go-alexa-lambda v0.2.2/go.mod h1:GhY33G/b3qGTPAvB7jMkTgmYSR5528ctZ/DXbZACxuc=
 github.com/eapache/go-resiliency v1.2.0/go.mod h1:kFI+JgMyC7bLPUVY133qvEBtVayf5mFgVsvEsIPBvNs=
 github.com/eapache/go-xerial-snappy v0.0.0-20180814174437-776d5712da21/go.mod h1:+020luEh2TKB4/GOp8oxxtq0Daoen/Cii55CzbTV6DU=
 github.com/eapache/queue v1.1.0/go.mod h1:6eCeP0CKFpHLu8blIFXhExK/dRa7WDZfr6jVFPTqq+I=
