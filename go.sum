@@ -202,6 +202,8 @@ github.com/hamba/statter/v2 v2.3.1 h1:CLn64OjpwAQm3hcUidywQD2fuT/1Ey796ptjbCuZ4k
 github.com/hamba/statter/v2 v2.3.1/go.mod h1:l0hZwI8OGs781fPqLDIu/2tmyRRezpDY71P4qin+WcY=
 github.com/hamba/statter/v2 v2.3.2 h1:VKUzx+eRS6bZOiCVUummILB6Zh+hBaUA8NTk2QXW0zI=
 github.com/hamba/statter/v2 v2.3.2/go.mod h1:g4pLzCbbhP0x6NcXAYkgViTiREAKj6UFQJOYxI25Smw=
+github.com/hamba/statter/v2 v2.3.3 h1:Xokqez+TK7X977JbdzOFfv6mc9TX/0Gub+LQccwdIMI=
+github.com/hamba/statter/v2 v2.3.3/go.mod h1:g4pLzCbbhP0x6NcXAYkgViTiREAKj6UFQJOYxI25Smw=
 github.com/hamba/timex v1.0.1 h1:Qefttpp1WRjv2irFi1uMvfM+CmivG/7YSkMlG/WKHWQ=
 github.com/hamba/timex v1.0.1/go.mod h1:lUd4hx+gOnT4D9WP7mzJyVaG/B25a+TaPq4nr2AiVf4=
 github.com/hamba/timex v1.1.0 h1:FRp5HDFY+2Z2O5eKZ1XAr2zbuZTOIjl4i86y0BX8SyA=
