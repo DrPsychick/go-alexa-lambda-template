@@ -106,6 +106,8 @@ github.com/drpsychick/go-alexa-lambda v0.2.11 h1:LMQnHwdH3SIR3bVF5YX9q/S/M7KE0ot
 github.com/drpsychick/go-alexa-lambda v0.2.11/go.mod h1:SNEomCij6nGrAWgzHHiYQPNEiokwN2u0+STW+W/SqcE=
 github.com/drpsychick/go-alexa-lambda v0.2.12 h1:JI5dzmjsnf+K3N15t6wdpyfC6M63S2yKYdXU86ER6RU=
 github.com/drpsychick/go-alexa-lambda v0.2.12/go.mod h1:SNEomCij6nGrAWgzHHiYQPNEiokwN2u0+STW+W/SqcE=
+github.com/drpsychick/go-alexa-lambda v0.2.14 h1:ODSpJFk9fY49ssgSqxydViF6YA632sH122vywHJCraQ=
+github.com/drpsychick/go-alexa-lambda v0.2.14/go.mod h1:jFxQ6SPsij4lcD0YW910uuOaRDVRX66kD5jFJVPMZT8=
 github.com/eapache/go-resiliency v1.2.0/go.mod h1:kFI+JgMyC7bLPUVY133qvEBtVayf5mFgVsvEsIPBvNs=
 github.com/eapache/go-xerial-snappy v0.0.0-20180814174437-776d5712da21/go.mod h1:+020luEh2TKB4/GOp8oxxtq0Daoen/Cii55CzbTV6DU=
 github.com/eapache/queue v1.1.0/go.mod h1:6eCeP0CKFpHLu8blIFXhExK/dRa7WDZfr6jVFPTqq+I=
