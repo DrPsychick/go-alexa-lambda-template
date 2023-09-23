@@ -3,7 +3,7 @@ module github.com/drpsychick/go-alexa-lambda-template
 go 1.19
 
 require (
-	github.com/drpsychick/go-alexa-lambda v0.2.14
+	github.com/drpsychick/go-alexa-lambda v0.2.16
 	github.com/hamba/cmd/v2 v2.7.2
 	github.com/hamba/logger/v2 v2.5.0
 	github.com/hamba/statter/v2 v2.3.4
