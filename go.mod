@@ -3,7 +3,7 @@ module github.com/drpsychick/go-alexa-lambda-template
 go 1.19
 
 require (
-	github.com/drpsychick/go-alexa-lambda v0.2.16
+	github.com/drpsychick/go-alexa-lambda v0.2.17
 	github.com/hamba/cmd/v2 v2.9.0
 	github.com/hamba/logger/v2 v2.5.0
 	github.com/hamba/statter/v2 v2.3.4
@@ -43,7 +43,6 @@ require (
 	github.com/valyala/histogram v1.2.0 // indirect
 	github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673 // indirect
 	go.opentelemetry.io/otel v1.19.0 // indirect
-	go.opentelemetry.io/otel/exporters/jaeger v1.14.0 // indirect
 	go.opentelemetry.io/otel/exporters/otlp/otlptrace v1.19.0 // indirect
 	go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.19.0 // indirect
 	go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp v1.19.0 // indirect
