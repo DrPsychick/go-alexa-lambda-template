@@ -16,7 +16,7 @@ var commands = []*cli.Command{
 		Name:   "server",
 		Usage:  "Run the lambda server",
 		Action: runServer,
-		Flags:  cmd.Flags{}.Merge(cmd.LogFlags, cmd.StatsFlags, cmd.ServerFlags),
+		Flags:  cmd.Flags{}.Merge(cmd.LogFlags, cmd.StatsFlags, serverFlags),
 	},
 	{
 		Name:   "lambda",
@@ -28,7 +28,7 @@ var commands = []*cli.Command{
 				Usage:   "Port on which lambda will listen",
 				EnvVars: []string{"_LAMBDA_SERVER_PORT"},
 			},
-		}.Merge(cmd.LogFlags, cmd.StatsFlags, cmd.ServerFlags),
+		}.Merge(cmd.LogFlags, cmd.StatsFlags, serverFlags),
 	},
 	{
 		Name:  "make",
@@ -44,7 +44,7 @@ var commands = []*cli.Command{
 				Usage:   "Generate Alexa interaction model JSON files",
 				EnvVars: []string{"ALEXA_MAKE_MODELS"},
 			},
-		}.Merge(cmd.LogFlags, cmd.StatsFlags, cmd.ServerFlags),
+		}.Merge(cmd.LogFlags, cmd.StatsFlags),
 		Action: runMake,
 	},
 	{
@@ -56,6 +56,14 @@ var commands = []*cli.Command{
 }
 
 var sharedFlags = cmd.Flags{}
+var serverFlags = cmd.Flags{
+	&cli.StringFlag{
+		Name:    "port",
+		Value:   "80",
+		Usage:   "Port for HTTP server to listen on",
+		EnvVars: []string{"PORT"},
+	},
+}
 
 func main() {
 	app := cli.NewApp()
@@ -64,7 +72,7 @@ func main() {
 	app.Version = version
 	app.Commands = commands
 	// need to be set for default Action
-	app.Flags = sharedFlags.Merge(cmd.LogFlags, cmd.StatsFlags, cmd.ServerFlags)
+	app.Flags = sharedFlags.Merge(cmd.LogFlags, cmd.StatsFlags, serverFlags)
 	app.Action = runLambda
 
 	if err := app.Run(os.Args); err != nil {
