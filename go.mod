@@ -1,13 +1,15 @@
 module github.com/drpsychick/go-alexa-lambda-template
 
-go 1.19
+go 1.21
+
+toolchain go1.22.0
 
 require (
 	github.com/drpsychick/go-alexa-lambda v0.2.24
 	github.com/hamba/cmd/v2 v2.9.0
 	github.com/hamba/logger/v2 v2.5.0
 	github.com/hamba/statter/v2 v2.3.4
-	github.com/hamba/timex v1.1.0
+	github.com/hamba/timex v1.2.0
 	github.com/joho/godotenv v1.5.1
 	github.com/stretchr/testify v1.9.0
 	github.com/urfave/cli/v2 v2.27.1
