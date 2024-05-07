@@ -10,7 +10,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     env:
-      GOLANGCI_LINT_VERSION: v1.51.2
+      GOLANGCI_LINT_VERSION: v1.58.0
     steps:
       - uses: actions/checkout@v3
       - name: Set up Go
