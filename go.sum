@@ -17,6 +17,8 @@ github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/drpsychick/go-alexa-lambda v0.2.25 h1:ZKl8AlXNTwdUVeSWlCBYCHhsXfwEQ8XI1F6qHUqeVR0=
 github.com/drpsychick/go-alexa-lambda v0.2.25/go.mod h1:H3cBdqeHR8qMkd4VXHxxE72IV9bBFzkjbGZ535bo0no=
+github.com/drpsychick/go-alexa-lambda v0.2.28 h1:nLdkFaRhZIAE6lVkqdZyXIWj2MnEs5t8mo4LSraVcPk=
+github.com/drpsychick/go-alexa-lambda v0.2.28/go.mod h1:PvCGycqSmNXAYqxFq+Ox2lqyvRSyheQh3titCt7XChw=
 github.com/go-logr/logr v1.2.2/go.mod h1:jdQByPbusPIv2/zmleS9BjJVeZ6kBagPoEUsqbVz/1A=
 github.com/go-logr/logr v1.4.1 h1:pKouT5E8xu9zeFC39JXRDukb6JFQPXM5p5I91188VAQ=
 github.com/go-logr/logr v1.4.1/go.mod h1:9T104GzyrTigFIr8wt5mBrctHMim0Nb2HLGrmQ40KvY=
