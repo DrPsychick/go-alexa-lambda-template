@@ -11,6 +11,7 @@ import (
 	"github.com/drpsychick/go-alexa-lambda/ssml"
 	"github.com/hamba/logger/v2"
 	"github.com/hamba/statter/v2"
+	"github.com/hamba/statter/v2/reporter/l2met"
 	"github.com/stretchr/testify/assert"
 	"os"
 	"testing"
@@ -41,7 +42,10 @@ func initLocaleRegistry(t *testing.T) {
 func TestLambda_HandleLaunch(t *testing.T) {
 	initLocaleRegistry(t)
 
-	app := mydemoskill.NewApplication(logger.New(os.Stdout, logger.ConsoleFormat(), logger.Info), statter.New(nil, time.Second))
+	log := logger.New(os.Stdout, logger.ConsoleFormat(), logger.Info)
+	stats := statter.New(l2met.New(log, ""), time.Second)
+	app := mydemoskill.NewApplication(log, stats)
+
 	loc, err := loca.Registry.Resolve("en-US")
 	assert.NoError(t, err)
 	assert.NotEmpty(t, loc)
@@ -96,7 +100,9 @@ func TestLambda_HandleLaunch(t *testing.T) {
 func TestLambda_HandleEnd(t *testing.T) {
 	initLocaleRegistry(t)
 
-	app := mydemoskill.NewApplication(logger.New(os.Stdout, logger.ConsoleFormat(), logger.Info), statter.New(nil, time.Second))
+	log := logger.New(os.Stdout, logger.ConsoleFormat(), logger.Info)
+	stats := statter.New(l2met.New(log, ""), time.Second)
+	app := mydemoskill.NewApplication(log, stats)
 
 	r := &alexa.RequestEnvelope{
 		Version: "1.0",
@@ -148,7 +154,9 @@ func TestLambda_HandleEnd(t *testing.T) {
 func TestLambda_HandleHelp(t *testing.T) {
 	initLocaleRegistry(t)
 
-	app := mydemoskill.NewApplication(logger.New(os.Stdout, logger.ConsoleFormat(), logger.Info), statter.New(nil, time.Second))
+	log := logger.New(os.Stdout, logger.ConsoleFormat(), logger.Info)
+	stats := statter.New(l2met.New(log, ""), time.Second)
+	app := mydemoskill.NewApplication(log, stats)
 
 	r := &alexa.RequestEnvelope{
 		Version: "1.0",
@@ -205,7 +213,9 @@ func TestLambda_HandleHelp(t *testing.T) {
 func TestLambda_HandleStop(t *testing.T) {
 	initLocaleRegistry(t)
 
-	app := mydemoskill.NewApplication(logger.New(os.Stdout, logger.ConsoleFormat(), logger.Info), statter.New(nil, time.Second))
+	log := logger.New(os.Stdout, logger.ConsoleFormat(), logger.Info)
+	stats := statter.New(l2met.New(log, ""), time.Second)
+	app := mydemoskill.NewApplication(log, stats)
 
 	r := &alexa.RequestEnvelope{
 		Version: "1.0",
@@ -256,4 +266,6 @@ func TestLambda_HandleStop(t *testing.T) {
 	assert.NotEmpty(t, resp)
 	assert.Equal(t, loc.Get(l10n.KeyStopTitle), resp.Response.Card.Title)
 	assert.Equal(t, loc.Get(l10n.KeyStopText), resp.Response.Card.Content)
+
+	stats.Close()
 }
