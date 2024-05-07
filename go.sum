@@ -45,6 +45,8 @@ github.com/hamba/statter/v2 v2.3.5 h1:qAFu+n4Q08LtrBdcBYexItfOoJJ16D/m/boq8fm5hn
 github.com/hamba/statter/v2 v2.3.5/go.mod h1:LS7DqETxoVpRraL3tn9O70zYCaVRL2A98SvZw/LZkAI=
 github.com/hamba/timex v1.1.0 h1:FRp5HDFY+2Z2O5eKZ1XAr2zbuZTOIjl4i86y0BX8SyA=
 github.com/hamba/timex v1.1.0/go.mod h1:gGOPb5kMDgX6ml27BWmS7psaG1MzQhH31FeJiDmP+7c=
+github.com/hamba/timex v1.2.0 h1:Q1SMJz38jg0y+De/5D/owwqaTOMlU1vAwYGn70n1ahs=
+github.com/hamba/timex v1.2.0/go.mod h1:dCLYOsXXo4mRHEEnkzZjGArTvK29prYcuKW/1QoVhAA=
 github.com/jessevdk/go-flags v1.4.0/go.mod h1:4FA24M0QyGHXBuZZK/XkWh8h0e1EYbRYJSGM75WSRxI=
 github.com/joho/godotenv v1.5.1 h1:7eLL/+HRGLY0ldzfGMeQkb7vMd0as4CfYvUVzLqw0N0=
 github.com/joho/godotenv v1.5.1/go.mod h1:f4LDr5Voq0i2e/R5DDNOoa2zzDfwtkZa6DnEwAbqwq4=
