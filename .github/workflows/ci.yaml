@@ -46,5 +46,5 @@ jobs:
         run: |
           go build -a -ldflags "-s -X main.version=$(git describe --tags --always)" -o ./mydemoskill ./cmd/mydemoskill
           ./mydemoskill make --skill --models
-          apt install -y git-lfs
+          sudo apt-get install -y git-lfs
           ./test/test-lambda.sh
