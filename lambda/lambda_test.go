@@ -266,6 +266,4 @@ func TestLambda_HandleStop(t *testing.T) {
 	assert.NotEmpty(t, resp)
 	assert.Equal(t, loc.Get(l10n.KeyStopTitle), resp.Response.Card.Title)
 	assert.Equal(t, loc.Get(l10n.KeyStopText), resp.Response.Card.Content)
-
-	stats.Close()
 }
