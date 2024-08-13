@@ -5,7 +5,7 @@ go 1.21
 toolchain go1.22.6
 
 require (
-	github.com/drpsychick/go-alexa-lambda v0.3.8
+	github.com/drpsychick/go-alexa-lambda v0.3.11
 	github.com/hamba/cmd/v2 v2.12.0
 	github.com/hamba/logger/v2 v2.6.0
 	github.com/hamba/statter/v2 v2.3.5
