@@ -3,15 +3,14 @@
   "extends": [
     "config:base"
   ],
-  "enabledManagers": ["regex", "gomod"],
+  "enabledManagers": ["regex", "gomod", "github-actions"],
   "regexManagers": [
     {
       "fileMatch": [
-        "^.travis.yml$"
+        "^.github/workflows/ci.yaml$"
       ],
       "matchStrings": [
-        "\\s- .*VERSION=(?<currentValue>.*?) # (?<datasource>.*?):(?<depName>.*?)\\n",
-        "\\s- go install .*@(?<currentValue>.*?) # (?<datasource>.*?):(?<depName>.*?)\\n"
+        "\\s.*_VERSION: (?<currentValue>.*?) # (?<datasource>.*?):(?<depName>.*?)\\n"
       ],
       "versioningTemplate": "semver"
     }
