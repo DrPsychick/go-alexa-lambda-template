@@ -43,6 +43,8 @@ github.com/drpsychick/go-alexa-lambda v0.3.17 h1:fPrBNguvNYXjvM+qDdmUFTF9H6yz0kr
 github.com/drpsychick/go-alexa-lambda v0.3.17/go.mod h1:HKZ2RsdveqqXu+6hqUPG4cJIy1+5RqiFkH5sO5Xd9pI=
 github.com/drpsychick/go-alexa-lambda v0.3.19 h1:+VXbGO7LYhxU4YsnUWxbijHJh4u5GzYJucD7UfbyLyY=
 github.com/drpsychick/go-alexa-lambda v0.3.19/go.mod h1:Tj9eYI0lFgzGWgjFE1gmnKpuq31s9r6o2LJgeJ1qR+s=
+github.com/drpsychick/go-alexa-lambda v0.3.20 h1:TObSBuBbVJyxP1MN49PN2XDHxRW27qCOykcJ4mqg8Ro=
+github.com/drpsychick/go-alexa-lambda v0.3.20/go.mod h1:peCjyl6sOb/ukuumYN+b53yO9TBftblRpGyxT/Wl/RY=
 github.com/go-logr/logr v1.2.2/go.mod h1:jdQByPbusPIv2/zmleS9BjJVeZ6kBagPoEUsqbVz/1A=
 github.com/go-logr/logr v1.4.1 h1:pKouT5E8xu9zeFC39JXRDukb6JFQPXM5p5I91188VAQ=
 github.com/go-logr/logr v1.4.1/go.mod h1:9T104GzyrTigFIr8wt5mBrctHMim0Nb2HLGrmQ40KvY=
