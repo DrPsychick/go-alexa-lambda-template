@@ -2,7 +2,7 @@ module github.com/drpsychick/go-alexa-lambda-template
 
 go 1.22
 
-toolchain go1.23.5
+toolchain go1.24.0
 
 require (
 	github.com/drpsychick/go-alexa-lambda v0.3.22
