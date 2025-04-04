@@ -39,7 +39,7 @@ func TestWithRequestStats(t *testing.T) {
 	}
 
 	m.Serve(bdr, req)
-	stats.Close()
+	_ = stats.Close()
 	r.AssertExpectations(t)
 }
 
@@ -64,7 +64,7 @@ func TestWithRequestStats_NonIntentRequests(t *testing.T) {
 	}
 
 	m.Serve(bdr, req)
-	stats.Close()
+	_ = stats.Close()
 	r.AssertExpectations(t)
 }
 
