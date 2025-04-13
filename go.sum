@@ -6,6 +6,8 @@ github.com/VictoriaMetrics/metrics v1.35.2 h1:Bj6L6ExfnakZKYPpi7mGUnkJP4NGQz2v5w
 github.com/VictoriaMetrics/metrics v1.35.2/go.mod h1:r7hveu6xMdUACXvB8TYdAj8WEsKzWB0EkpJN+RDtOf8=
 github.com/aws/aws-lambda-go v1.47.0 h1:0H8s0vumYx/YKs4sE7YM0ktwL2eWse+kfopsRI1sXVI=
 github.com/aws/aws-lambda-go v1.47.0/go.mod h1:dpMpZgvWx5vuQJfBt0zqBha60q7Dd7RfgJv23DymV8A=
+github.com/aws/aws-lambda-go v1.48.0 h1:1aZUYsrJu0yo5fC4z+Rba1KhNImXcJcvHu763BxoyIo=
+github.com/aws/aws-lambda-go v1.48.0/go.mod h1:dpMpZgvWx5vuQJfBt0zqBha60q7Dd7RfgJv23DymV8A=
 github.com/beorn7/perks v1.0.1 h1:VlbKKnNfV8bJzeqoa4cOKqO6bYr3WgKZxO8Z16+hsOM=
 github.com/beorn7/perks v1.0.1/go.mod h1:G2ZrVWU2WbWT9wwq4/hrbKbnv/1ERSJQ0ibhJ6rlkpw=
 github.com/cactus/go-statsd-client/v5 v5.1.0 h1:sbbdfIl9PgisjEoXzvXI1lwUKWElngsjJKaZeC021P4=
@@ -63,6 +65,8 @@ github.com/drpsychick/go-alexa-lambda v0.3.32 h1:tol2JwsRDz4Qs1i+18QhlmR/A18FbpS
 github.com/drpsychick/go-alexa-lambda v0.3.32/go.mod h1:Yi1rqAARJA9Uebaiq7vCzk4FIQIMYatbgyttB396Dd0=
 github.com/drpsychick/go-alexa-lambda v0.3.33 h1:tgknswWrO/Ns7kxRLTRO6UjZUzP36K1cnhi7weIbfVY=
 github.com/drpsychick/go-alexa-lambda v0.3.33/go.mod h1:Yi1rqAARJA9Uebaiq7vCzk4FIQIMYatbgyttB396Dd0=
+github.com/drpsychick/go-alexa-lambda v0.3.34 h1:Pys3nSny/vJrk+G22Jci96oHiRU+BVK9HnOYyGxPYfs=
+github.com/drpsychick/go-alexa-lambda v0.3.34/go.mod h1:NPikz3wJvWclAnpwh2P++fUCqaXdHv2B2HUnvU/US3Q=
 github.com/go-logr/logr v1.2.2/go.mod h1:jdQByPbusPIv2/zmleS9BjJVeZ6kBagPoEUsqbVz/1A=
 github.com/go-logr/logr v1.4.1 h1:pKouT5E8xu9zeFC39JXRDukb6JFQPXM5p5I91188VAQ=
 github.com/go-logr/logr v1.4.1/go.mod h1:9T104GzyrTigFIr8wt5mBrctHMim0Nb2HLGrmQ40KvY=
