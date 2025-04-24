@@ -135,6 +135,8 @@ github.com/hamba/statter/v2 v2.4.0 h1:0axag+o3oFGH7UC+tYXN3oY/Qq5pspQUaMpHjtxjw4
 github.com/hamba/statter/v2 v2.4.0/go.mod h1:U8ojLXmTKsBQ8HX+JVW3iqOw2Wepm4YnTYoxyim6spA=
 github.com/hamba/statter/v2 v2.6.0 h1:d64DL4p48xAW4M876jrtguuEFXFf6cDFJR0WxNCDKVI=
 github.com/hamba/statter/v2 v2.6.0/go.mod h1:5QpB06ilNfJNfXW5YYe4cHUlh1NGTjIlpKDv/nl7U8w=
+github.com/hamba/statter/v2 v2.6.1 h1:AVNKPEyRz3y4tpzkW4a7eHcdpjUOvyEtH0eqSRQl/uY=
+github.com/hamba/statter/v2 v2.6.1/go.mod h1:r3rbO7/TeKsPpL5iFMOKqSD6PzLptg+w6TPHccBNeaQ=
 github.com/hamba/timex v1.1.0 h1:FRp5HDFY+2Z2O5eKZ1XAr2zbuZTOIjl4i86y0BX8SyA=
 github.com/hamba/timex v1.1.0/go.mod h1:gGOPb5kMDgX6ml27BWmS7psaG1MzQhH31FeJiDmP+7c=
 github.com/hamba/timex v1.2.0 h1:Q1SMJz38jg0y+De/5D/owwqaTOMlU1vAwYGn70n1ahs=
@@ -150,6 +152,8 @@ github.com/klauspost/compress v1.17.9 h1:6KIumPrER1LHsvBVuDa0r5xaG0Es51mhhB9BQB2
 github.com/klauspost/compress v1.17.9/go.mod h1:Di0epgTjJY877eYKx5yC51cX2A2Vl2ibi7bDH9ttBbw=
 github.com/klauspost/compress v1.17.11 h1:In6xLpyWOi1+C7tXUUWv2ot1QvBjxevKAaI6IXrJmUc=
 github.com/klauspost/compress v1.17.11/go.mod h1:pMDklpSncoRMuLFrf1W9Ss9KT+0rH90U12bZKk7uwG0=
+github.com/klauspost/compress v1.18.0 h1:c/Cqfb0r+Yi+JtIEq73FWXVkRonBlf0CRNYc8Zttxdo=
+github.com/klauspost/compress v1.18.0/go.mod h1:2Pp+KzxcywXVXMr50+X0Q/Lsb43OQHYWRCY2AiWywWQ=
 github.com/kr/pretty v0.3.1 h1:flRD4NNwYAUpkphVc1HcthR4KEIFJ65n8Mw5qdRn3LE=
 github.com/kr/pretty v0.3.1/go.mod h1:hoEshYVHaxMs3cyo3Yncou5ZscifuDolrwPKZanG3xk=
 github.com/kr/text v0.2.0 h1:5Nx0Ya0ZqY2ygV366QzturHI13Jq95ApcVaJBhpS+AY=
@@ -175,6 +179,8 @@ github.com/prometheus/client_golang v1.20.4 h1:Tgh3Yr67PaOv/uTqloMsCEdeuFTatm5zI
 github.com/prometheus/client_golang v1.20.4/go.mod h1:PIEt8X02hGcP8JWbeHyeZ53Y/jReSnHgO035n//V5WE=
 github.com/prometheus/client_golang v1.20.5 h1:cxppBPuYhUnsO6yo/aoRol4L7q7UFfdm+bR9r+8l63Y=
 github.com/prometheus/client_golang v1.20.5/go.mod h1:PIEt8X02hGcP8JWbeHyeZ53Y/jReSnHgO035n//V5WE=
+github.com/prometheus/client_golang v1.22.0 h1:rb93p9lokFEsctTys46VnV1kLCDpVZ0a/Y92Vm0Zc6Q=
+github.com/prometheus/client_golang v1.22.0/go.mod h1:R7ljNsLXhuQXYZYtw6GAE9AZg8Y7vEW5scdCXrWRXC0=
 github.com/prometheus/client_model v0.5.0 h1:VQw1hfvPvk3Uv6Qf29VrPF32JB6rtbgI6cYPYQjL0Qw=
 github.com/prometheus/client_model v0.5.0/go.mod h1:dTiFglRmd66nLR9Pv9f0mZi7B7fk5Pm3gvsjB5tr+kI=
 github.com/prometheus/client_model v0.6.1 h1:ZKSh/rekM+n3CeS952MLRAdFwIKqeY8b62p8ais2e9E=
