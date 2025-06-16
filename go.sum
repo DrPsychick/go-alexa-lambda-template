@@ -4,6 +4,8 @@ github.com/VictoriaMetrics/metrics v1.35.1 h1:o84wtBKQbzLdDy14XeskkCZih6anG+veZ1
 github.com/VictoriaMetrics/metrics v1.35.1/go.mod h1:r7hveu6xMdUACXvB8TYdAj8WEsKzWB0EkpJN+RDtOf8=
 github.com/VictoriaMetrics/metrics v1.35.2 h1:Bj6L6ExfnakZKYPpi7mGUnkJP4NGQz2v5wiChhXNyWQ=
 github.com/VictoriaMetrics/metrics v1.35.2/go.mod h1:r7hveu6xMdUACXvB8TYdAj8WEsKzWB0EkpJN+RDtOf8=
+github.com/VictoriaMetrics/metrics v1.37.0 h1:u5Yr+HFofQyn7kgmmkufgkX0nEA6G1oEyK2eaKsVaUM=
+github.com/VictoriaMetrics/metrics v1.37.0/go.mod h1:r7hveu6xMdUACXvB8TYdAj8WEsKzWB0EkpJN+RDtOf8=
 github.com/aws/aws-lambda-go v1.47.0 h1:0H8s0vumYx/YKs4sE7YM0ktwL2eWse+kfopsRI1sXVI=
 github.com/aws/aws-lambda-go v1.47.0/go.mod h1:dpMpZgvWx5vuQJfBt0zqBha60q7Dd7RfgJv23DymV8A=
 github.com/aws/aws-lambda-go v1.48.0 h1:1aZUYsrJu0yo5fC4z+Rba1KhNImXcJcvHu763BxoyIo=
@@ -153,6 +155,8 @@ github.com/hamba/statter/v2 v2.6.0 h1:d64DL4p48xAW4M876jrtguuEFXFf6cDFJR0WxNCDKV
 github.com/hamba/statter/v2 v2.6.0/go.mod h1:5QpB06ilNfJNfXW5YYe4cHUlh1NGTjIlpKDv/nl7U8w=
 github.com/hamba/statter/v2 v2.6.1 h1:AVNKPEyRz3y4tpzkW4a7eHcdpjUOvyEtH0eqSRQl/uY=
 github.com/hamba/statter/v2 v2.6.1/go.mod h1:r3rbO7/TeKsPpL5iFMOKqSD6PzLptg+w6TPHccBNeaQ=
+github.com/hamba/statter/v2 v2.7.0 h1:9CnjJ5PcxOzIVJSAFSJm0lnUUBjTo3psV9nn+yZ1cMM=
+github.com/hamba/statter/v2 v2.7.0/go.mod h1:SJPj0HCM+z7GxnoG+YBgN87SP0GVJ5YPjqHINrgqFYE=
 github.com/hamba/timex v1.1.0 h1:FRp5HDFY+2Z2O5eKZ1XAr2zbuZTOIjl4i86y0BX8SyA=
 github.com/hamba/timex v1.1.0/go.mod h1:gGOPb5kMDgX6ml27BWmS7psaG1MzQhH31FeJiDmP+7c=
 github.com/hamba/timex v1.2.0 h1:Q1SMJz38jg0y+De/5D/owwqaTOMlU1vAwYGn70n1ahs=
