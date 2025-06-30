@@ -9,7 +9,7 @@ require (
 	github.com/hamba/cmd/v2 v2.15.0
 	github.com/hamba/cmd/v3 v3.0.0
 	github.com/hamba/logger/v2 v2.8.0
-	github.com/hamba/statter/v2 v2.6.1
+	github.com/hamba/statter/v2 v2.7.0
 	github.com/hamba/timex v1.2.0
 	github.com/joho/godotenv v1.5.1
 	github.com/stretchr/testify v1.10.0
@@ -18,7 +18,7 @@ require (
 )
 
 require (
-	github.com/VictoriaMetrics/metrics v1.35.2 // indirect
+	github.com/VictoriaMetrics/metrics v1.37.0 // indirect
 	github.com/aws/aws-lambda-go v1.48.0 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cactus/go-statsd-client/v5 v5.1.0 // indirect
