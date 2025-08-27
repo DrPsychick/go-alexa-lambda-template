@@ -12,7 +12,7 @@ require (
 	github.com/hamba/statter/v2 v2.7.0
 	github.com/hamba/timex v1.2.0
 	github.com/joho/godotenv v1.5.1
-	github.com/stretchr/testify v1.11.0
+	github.com/stretchr/testify v1.11.1
 	github.com/urfave/cli/v2 v2.27.7
 	github.com/urfave/cli/v3 v3.4.1
 )
