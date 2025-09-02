@@ -15,6 +15,8 @@ github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/drpsychick/go-alexa-lambda v0.3.49 h1:eqg0FrTHKF8Mjbew2D/LtUwjK7OwmbQgdyVRorSb3lw=
 github.com/drpsychick/go-alexa-lambda v0.3.49/go.mod h1:LUXv6dD7gw3SLBMdp2ywfUUO9oe7CjrA5u4MC1gx/P4=
+github.com/drpsychick/go-alexa-lambda v0.3.51 h1:CtOTb5mykqpebtuSqP5wQ9J6jTzmzv2Aup1toOhnB4k=
+github.com/drpsychick/go-alexa-lambda v0.3.51/go.mod h1:IBARnoG5X1LZDY8C9nHkeddFTYj5uqUHchXzGlYu8ts=
 github.com/ettle/strcase v0.2.0 h1:fGNiVF21fHXpX1niBgk0aROov1LagYsOwV/xqKDKR/Q=
 github.com/ettle/strcase v0.2.0/go.mod h1:DajmHElDSaX76ITe3/VHVyMin4LWSJN5Z909Wp+ED1A=
 github.com/go-logr/logr v1.2.2/go.mod h1:jdQByPbusPIv2/zmleS9BjJVeZ6kBagPoEUsqbVz/1A=
