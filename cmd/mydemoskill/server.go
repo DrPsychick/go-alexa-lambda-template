@@ -1,10 +1,12 @@
 package main
 
 import (
-	"github.com/urfave/cli/v2"
+	"context"
+
+	"github.com/urfave/cli/v3"
 )
 
-func runServer(c *cli.Context) error {
+func runServer(c context.Context, cmd *cli.Command) error {
 	// TODO!
 	// s := rpc.NewServer(app)
 	// logger.Info(ctx, "Starting lambda server")
