@@ -1,22 +1,35 @@
 package main
 
 import (
+	"context"
 	"errors"
 	"fmt"
-	mydemoskill "github.com/drpsychick/go-alexa-lambda-template"
 
 	"github.com/drpsychick/go-alexa-lambda"
+	mydemoskill "github.com/drpsychick/go-alexa-lambda-template"
 	"github.com/drpsychick/go-alexa-lambda-template/lambda"
 	"github.com/drpsychick/go-alexa-lambda-template/lambda/middleware"
 	"github.com/drpsychick/go-alexa-lambda/skill"
+	"github.com/hamba/cmd/v3/observe"
 	"github.com/hamba/timex/mono"
-	"github.com/urfave/cli/v2"
+	"github.com/urfave/cli/v3"
 )
 
-func runLambda(c *cli.Context) error {
+func runLambda(ctx context.Context, cmd *cli.Command) error {
 	start := mono.Now()
 
-	app, err := newApplication(c)
+	ctx, cancel := context.WithCancel(ctx)
+	defer cancel()
+
+	obsvr, err := observe.New(ctx, cmd, "tocli", &observe.Options{
+		StatsRuntime: false,
+	})
+	if err != nil {
+		return fmt.Errorf("failed to create observer: %w", err)
+	}
+	defer obsvr.Close()
+
+	app, err := newApplication(obsvr)
 	if err != nil {
 		return err
 	}

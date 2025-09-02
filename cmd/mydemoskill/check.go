@@ -1,14 +1,15 @@
 package main
 
 import (
+	"context"
 	"fmt"
 	"strings"
 
 	"github.com/drpsychick/go-alexa-lambda-template/loca"
-	"github.com/urfave/cli/v2"
+	"github.com/urfave/cli/v3"
 )
 
-func runCheck(c *cli.Context) error {
+func runCheck(ctx context.Context, cmd *cli.Command) error {
 	// check all `*_Samples` localization for punctuation
 	// Workaround: since we cannot access "TextSnippets" and search for "*_Samples", we must use a static list :(
 	samplesList := []string{

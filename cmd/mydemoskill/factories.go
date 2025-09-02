@@ -2,25 +2,14 @@ package main
 
 import (
 	mydemoskill "github.com/drpsychick/go-alexa-lambda-template"
-
 	"github.com/drpsychick/go-alexa-lambda/skill"
-	"github.com/hamba/cmd/v2"
-	"github.com/urfave/cli/v2"
+	"github.com/hamba/cmd/v3/observe"
 )
 
-func newApplication(c *cli.Context) (*mydemoskill.Application, error) {
-	log, err := cmd.NewLogger(c)
-	if err != nil {
-		return nil, err
-	}
-	stat, err := cmd.NewStatter(c, log)
-	if err != nil {
-		return nil, err
-	}
-
+func newApplication(obsvr *observe.Observer) (*mydemoskill.Application, error) {
 	app := mydemoskill.NewApplication(
-		log,
-		stat,
+		obsvr.Log,
+		obsvr.Stats,
 	)
 
 	return app, nil
