@@ -5,7 +5,7 @@ go 1.24.0
 toolchain go1.24.6
 
 require (
-	github.com/drpsychick/go-alexa-lambda v0.3.53
+	github.com/drpsychick/go-alexa-lambda v0.3.54
 	github.com/hamba/cmd/v3 v3.0.1
 	github.com/hamba/logger/v2 v2.9.0
 	github.com/hamba/statter/v2 v2.8.0
@@ -17,7 +17,7 @@ require (
 
 require (
 	github.com/VictoriaMetrics/metrics v1.40.1 // indirect
-	github.com/aws/aws-lambda-go v1.49.0 // indirect
+	github.com/aws/aws-lambda-go v1.50.0 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cactus/go-statsd-client/v5 v5.1.0 // indirect
 	github.com/cenkalti/backoff/v5 v5.0.2 // indirect
