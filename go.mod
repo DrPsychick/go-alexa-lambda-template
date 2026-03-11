@@ -1,12 +1,12 @@
 module github.com/drpsychick/go-alexa-lambda-template
 
-go 1.25.0
+go 1.25.8
 
 require (
 	github.com/drpsychick/go-alexa-lambda v0.3.56
 	github.com/hamba/cmd/v3 v3.0.1
 	github.com/hamba/logger/v2 v2.9.1
-	github.com/hamba/statter/v2 v2.8.0
+	github.com/hamba/statter/v2 v2.8.1
 	github.com/hamba/timex v1.2.0
 	github.com/joho/godotenv v1.5.1
 	github.com/stretchr/testify v1.11.1
@@ -14,7 +14,7 @@ require (
 )
 
 require (
-	github.com/VictoriaMetrics/metrics v1.40.1 // indirect
+	github.com/VictoriaMetrics/metrics v1.41.2 // indirect
 	github.com/aws/aws-lambda-go v1.50.0 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cactus/go-statsd-client/v5 v5.1.0 // indirect
@@ -25,6 +25,7 @@ require (
 	github.com/go-logr/logr v1.4.3 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-stack/stack v1.8.1 // indirect
+	github.com/go4org/hashtriemap v0.0.0-20251130024219-545ba229f689 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/grafana/otel-profiling-go v0.5.1 // indirect
 	github.com/grafana/pyroscope-go v1.2.2 // indirect
@@ -56,7 +57,7 @@ require (
 	go.opentelemetry.io/proto/otlp v1.7.0 // indirect
 	go.yaml.in/yaml/v2 v2.4.2 // indirect
 	golang.org/x/net v0.43.0 // indirect
-	golang.org/x/sys v0.36.0 // indirect
+	golang.org/x/sys v0.41.0 // indirect
 	golang.org/x/text v0.28.0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20250603155806-513f23925822 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250603155806-513f23925822 // indirect
